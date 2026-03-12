@@ -46,7 +46,16 @@ jobs:
             sleep 2
           done
 
+      - name: Load database schema
+        run: |
+          mysql -h 127.0.0.1 -uroot -proot broken_tunes < backup_db.sql
+
       - name: Run tests
+        env:
+          DB_HOST: 127.0.0.1
+          DB_USER: root
+          DB_PASS: root
+          DB_NAME: broken_tunes
         run: |
           cd broken-tunes-backend
           pytest -v
