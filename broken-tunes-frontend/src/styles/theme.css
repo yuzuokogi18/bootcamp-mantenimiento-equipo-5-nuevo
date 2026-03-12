@@ -1,0 +1,52 @@
+/* ============================================================
+   BROKEN TUNES — Design Tokens
+   Importar en index.css con: @import './styles/theme.css';
+   ============================================================ */
+
+:root {
+  /* Colores base */
+  --color-bg:        #121212;
+  --color-panel:     #181818;
+  --color-card:      #202020;
+  --color-muted:     #b3b3b3;
+  --color-accent:    #1db954;
+  --color-accent-lt: #1ed760;
+  --color-error:     #e5534b;
+
+  /* Superficies con transparencia */
+  --surface-1: rgba(255, 255, 255, 0.02);
+  --surface-2: rgba(255, 255, 255, 0.01);
+  --surface-3: rgba(255, 255, 255, 0.005);
+
+  /* Bordes */
+  --border-subtle:  rgba(255, 255, 255, 0.03);
+  --border-dim:     rgba(255, 255, 255, 0.06);
+
+  /* Espaciado */
+  --gap-sm:  8px;
+  --gap-md:  12px;
+  --gap-lg:  20px;
+
+  /* Radio de bordes */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* Tipografía */
+  --font-base: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-md:   13px;
+  --text-base: 14px;
+  --text-lg:   16px;
+  --text-xl:   20px;
+
+  /* Sombras */
+  --shadow-card:   0 6px 20px rgba(0, 0, 0, 0.6);
+  --shadow-accent: 0 4px 12px rgba(29, 185, 84, 0.12);
+  --shadow-bar:    0 -6px 30px rgba(0, 0, 0, 0.6);
+
+  /* z-index */
+  --z-player: 9999;
+}
