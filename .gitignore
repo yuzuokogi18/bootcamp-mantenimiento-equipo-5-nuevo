@@ -1,0 +1,34 @@
+# =============================================================
+# BROKEN TUNES — .gitignore
+# =============================================================
+
+# Variables de entorno — NUNCA commitear
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+reportes/
+
+# Node / Frontend
+node_modules/
+broken-tunes-frontend/dist/
+broken-tunes-frontend/.vite/
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
