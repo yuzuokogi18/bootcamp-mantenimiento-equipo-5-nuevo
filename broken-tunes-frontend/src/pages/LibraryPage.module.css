@@ -1,0 +1,99 @@
+.app {
+  max-width: 1100px;
+  margin: 28px auto 120px;
+  padding: 24px;
+  background: linear-gradient(180deg, var(--surface-1), var(--surface-2));
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--gap-lg);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-md);
+}
+.mark {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-lt));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #072;
+  transform: rotate(-10deg);
+  box-shadow: 0 2px 8px rgba(29, 185, 84, 0.12) inset;
+  flex-shrink: 0;
+}
+.title {
+  margin: 0;
+  font-size: var(--text-xl);
+  letter-spacing: 0.6px;
+  color: #fff;
+}
+.subtitle {
+  margin: 4px 0 0;
+  color: var(--color-muted);
+  font-size: var(--text-md);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--gap-lg);
+}
+.panel {
+  background: linear-gradient(180deg, var(--surface-1), var(--surface-2));
+  border-radius: var(--radius-lg);
+  padding: 16px;
+}
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--gap-md);
+}
+.panelTitle {
+  margin: 0;
+  font-size: var(--text-lg);
+  color: #fff;
+}
+.panelMeta {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+.state {
+  margin: 0;
+  padding: 16px 0;
+  color: var(--color-muted);
+  font-size: var(--text-md);
+  text-align: center;
+}
+.stateError {
+  margin: 0;
+  padding: 16px 0;
+  color: var(--color-error);
+  font-size: var(--text-md);
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .app  { margin-bottom: 180px; }
+}

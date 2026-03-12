@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-md);
+  padding: 10px;
+  background: linear-gradient(180deg, var(--surface-1), var(--surface-3));
+  border-radius: var(--radius-md);
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(180deg, var(--surface-1), var(--surface-2));
+}
+.art {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #2a2a2a, #111);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  flex-shrink: 0;
+}
+.meta { flex: 1; min-width: 0; }
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: var(--text-base);
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.artist {
+  margin: 4px 0 0;
+  font-size: var(--text-md);
+  color: var(--color-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.controls {
+  display: flex;
+  gap: var(--gap-sm);
+  align-items: center;
+  margin-left: 6px;
+}
+.playBtn {
+  border: none;
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-lt));
+  color: #041204;
+  box-shadow: var(--shadow-accent);
+  transition: opacity 0.15s ease;
+}
+.playBtn:hover  { opacity: 0.85; }
+.playBtn:active { transform: scale(0.97); }
+.backupBtn {
+  border: 1px solid var(--border-dim);
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: var(--color-muted);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.backupBtn:hover  { border-color: rgba(255,255,255,0.2); color: #fff; }
+.backupBtn:active { transform: scale(0.97); }
+.disabled { opacity: 0.4; cursor: not-allowed; }
+.error {
+  margin: 4px 0 0;
+  font-size: var(--text-xs);
+  color: var(--color-error);
+  width: 100%;
+}

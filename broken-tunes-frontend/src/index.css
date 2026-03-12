@@ -1,0 +1,14 @@
+@import './styles/theme.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-base);
+  background: linear-gradient(180deg, #0f0f0f 0%, #151515 100%);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
